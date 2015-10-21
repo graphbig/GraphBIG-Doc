@@ -1,0 +1,5 @@
+# ignore temporary files
+*~
+*.orig
+*.log
+
