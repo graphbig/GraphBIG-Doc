@@ -1,1 +1,63 @@
-TODO
+<pre style="display:inline-block;line-height:13px;">
+  ________                    .__   __________.___  ________
+ /  _____/___________  ______ |  |__\______   \   |/  _____/
+/   \  __\_  __ \__  \ \____ \|  |  \|    |  _/   /   \  ___
+\    \_\  \  | \// __ \|  |_> >   Y  \    |   \   \    \_\  \
+ \______  /__|  (____  /   __/|___|  /______  /___|\______  /
+        \/           \/|__|        \/       \/            \/
+</pre>
+
+# GraphBIG: How to compile
+
+## Requirements
+
+GraphBIG requires no external libraries. The following compilers are required (tested). 
+
+- CPU benchmarks: gcc/g++ with c++0x support (>4.3)
+- GPU benchmarks: CUDA SDK (5.5-7.0 tested)
+- Linux OS: Ubuntu/Debian/RHEL tested
+
+The OS dependency is coming from the profiling code. It can be removed by disabling all profiling related components. (defined in common/perf.h)
+
+## Compile
+
+GraphBIG has three benchmark categories:
+
+- benchmark: (default) CPU benchmarks
+- csr_bench: CPU benchmarks using CSR data format
+- gpu_bench: GPU benchmarks
+
+To compile benchmarks in each category, just get into the corresponding directory and type _"make all"_. To cleanup previous compiling, just use _"make clean"_ in a similar way. For example:
+
+```sh
+$ cd benchmark
+$ make clean
+$ make all
+```
+
+To compile only one particular benchmark, just get into the benchmark directory and use _"make all"_.
+
+Note: GraphBIG incorporates the source code of libpfm, which is a library for performance monitoring. It is used to convert performance counter names in string format to the corresponding hex codes. No extra installation is required. The source code of libpfm is in _tools/_ and will automatically unpacked, compiled, and linked during benchmark compiling. 
+
+## Compile flags
+
+GraphBIG incorporates a set of compile flags to control generated executable files. The details are listed below.
+
+|Name|Parameter|Default|Usage|
+|----|---------|-------|-----|
+|PFM|PFM=0|1|disable libpfm (generic linux perf events are still supported)|
+|DEBUG|DEBUG=1|0|enable debug flag|
+|VERIFY|VERIFY=1|0|enable verification mode, nondeterministic outputs are disabled|
+|SIM|SIM=1|0|enable annotations for indicating simulation start/end points| 
+|Others|||Internal usage only|
+
+Example:
+
+```sh
+$ make DEBUG=1 PFM=0 all
+```
+
+More details can be found in the _common.mk_ file in each category diretory. 
+
+
+
