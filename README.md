@@ -55,6 +55,17 @@ $ make run
 $ cat output.log
 ```
 
+## GraphBIG Directories
+|Directory|Contents|
+|---------:|--------|
+|benchmark|CPU benchmarks (default)|
+|gpu_bench|GPU benchmarks|
+|csr_bench|CPU benchmarks using CSR data format|
+|common|Supporting library|
+|openG|Graph computing framework|
+|tools|Profiling tools|
+|dataset|Sample dataset|
+
 
 ## Publication
 Lifeng Nai, Yinglong Xia, Ilie G. Tanase, Hyesoon Kim, and Ching-Yung Lin. [GraphBIG: Understanding Graph Computing in the Context of Industrial Solutions](http://nailifeng.org/pubs/sc-graphbig.pdf), To appear in _the proccedings of the International Conference for High Performance Computing, Networking, Storage and Analysis(SC), Nov. 2015_
@@ -64,6 +75,6 @@ Lifeng Nai, Yinglong Xia, Ilie G. Tanase, Hyesoon Kim, and Ching-Yung Lin. [Grap
 
 
 ## Contact us
-1. Submit issues on GitHub
+1. Submit "Issues" on GitHub
 2. Email: Lifeng Nai (lnai3 _at_ gatech.edu / nailifeng _at_ gmail.com)
 
