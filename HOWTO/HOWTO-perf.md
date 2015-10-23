@@ -28,6 +28,10 @@ The perf arguments are in the following format.
 The perf result will be included in the output of stdout with the following format.
 
 ```sh
+...
+PERF_COUNT_HW_CPU_CYCLES        ==>     2810155
+PERF_COUNT_HW_INSTRUCTIONS      ==>     777798
+...
 ```
 
 Multiple hardware performance counters can be specified. Even 30 counters are still fine. However, since the hardware counter resource in processors is limited, GraphBIG will collect the perf statistics via multiple rounds of execution if necessary. By default, each round of execution collected 4 counters. It can be changed by tuning the parameter _DEFAULT_PERF_GRP_SZ_ defined in _common/perf.h_.
