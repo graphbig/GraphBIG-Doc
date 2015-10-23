@@ -35,9 +35,9 @@ $ make clean
 $ make all
 ```
 
-To compile only one particular benchmark, just get into the benchmark directory and use _"make all"_.
+To compile only one particular benchmark, just get into the benchmark directory and use _"make all"_. 
 
-Note: GraphBIG incorporates the source code of libpfm, which is a library for performance monitoring. It is used to convert performance counter names in string format to the corresponding hex codes. No extra installation is required. The source code of libpfm is in _tools/_ and will automatically unpacked, compiled, and linked during benchmark compiling. 
+Note: GraphBIG incorporates the source code of libpfm, which is a library for performance monitoring. It is used to convert performance counter names in string format to the corresponding hex codes. No extra installation is required. The source code of libpfm is in _tools/_ and will automatically unpacked, compiled, and linked during compiling. The compiling of libpfm will be performed by each category level Makefile. It can also be compile separately by  calling _make all_ in _tools/_. If the category level Makefiles are never called, users should use the Makfile in _tools/_ before compiling separate benchmarks.
 
 ## Compile flags
 
