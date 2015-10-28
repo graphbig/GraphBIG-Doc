@@ -17,15 +17,15 @@ __GraphBIG-Doc__ repositoray contains documents of GraphBIG benchmark suites, in
 ## Documents
 __HOWTO/__ directory:
 
-- HOWTO-compile.md(HOWTO/HOWTO-compile.md): _how to compile GraphBIG_
-- HOWTO-run.md(HOWTO/HOWTO-run.md): _how to run GraphBIG benchmarks_
-- HOWTO-perf.md(HOWTO/HOWTO-perf.md): _how to profile GraphBIG with hardware performance counters_
-- HOWTO-simulate.md(HOWTO/HOWTO-simulate.md): _how to simulate GraphBIG with detailed timing simulation_
+- [HOWTO-compile.md](HOWTO/HOWTO-compile.md): _how to compile GraphBIG_
+- [HOWTO-run.md](HOWTO/HOWTO-run.md): _how to run GraphBIG benchmarks_
+- [HOWTO-perf.md](HOWTO/HOWTO-perf.md): _how to profile GraphBIG with hardware performance counters_
+- [HOWTO-simulate.md](HOWTO/HOWTO-simulate.md): _how to simulate GraphBIG with detailed timing simulation_
 
 __advanced/__ directory:
 
-- Dataset-import.md(advanced/Dataset-import.md): _how to import new datasets into GraphBIG_
-- OpenG-programming-guide.md(advanced/OpenG-programming-guide.md): _programming guide for openG graph framework_
+- [Dataset-import.md](advanced/Dataset-import.md): _how to import new datasets into GraphBIG_
+- [OpenG-programming-guide.md](advanced/OpenG-programming-guide.md): _programming guide for openG graph framework_
 
 
 
