@@ -23,8 +23,7 @@ There're two major requirements for the datasets:
 
 When using default configurations, GraphBIG requires a bit more things (but, that can be changed):
 
-- vertex list: vertex list named as "vertex.csv"
-- edge list: edge list named as "edge.csv"
+- vertex list: besides edge list, also needs a vertex list named as "vertex.csv"
 - separator: the csv file separator by default is "|"
 
 ## Use external dataset
