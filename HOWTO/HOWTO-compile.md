@@ -47,6 +47,7 @@ GraphBIG incorporates a set of compile flags to control generated executable fil
 |----|---------|-------|-----|
 |PFM|PFM=0|1|disable libpfm (generic linux perf events are still supported)|
 |DEBUG|DEBUG=1|0|enable debug flag|
+|EDGES|EDGES=1|0|enable edge-only mode (using only edge list file of the dataset)|
 |VERIFY|VERIFY=1|0|enable verification mode, nondeterministic outputs are disabled|
 |OUTPUT|OUTPUT=1|0|enable detailed graph property output|
 |SIM|SIM=1|0|enable annotations for indicating simulation start/end points| 
