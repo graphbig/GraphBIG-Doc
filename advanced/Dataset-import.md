@@ -12,7 +12,7 @@
 
 ## Introduction
 
-GraphBIG provides a set of datasets with various data types and sizes (refer to [here](https://github.com/graphbig/graphBIG/wiki/GraphBIG-Dataset) for more details). However, it is also possible to use your own datasets. In most cases, it requires only negligible efforts to use external graph datasets. 
+GraphBIG provides a set of datasets with various data types and sizes (refer to [wiki](https://github.com/graphbig/graphBIG/wiki/GraphBIG-Dataset) for more details). However, it is also possible to use your own datasets. In most cases, it requires only negligible efforts to use external graph datasets. 
 
 ## Requirements
 
