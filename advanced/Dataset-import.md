@@ -33,7 +33,7 @@ When using default configurations, GraphBIG requires a bit more things (but, tha
 2. put the csv files in the same directory and use the path as the parameter for "--dataset" argument. If your dataset doesn't have vertex list, enable the "EDGES=1" compile flag.
 3. if your dataset files are not using "|" as separator, specify your separator in the argument "--separator". 
 4. make sure that in the edge file, source vertex is in column 0 and destination vertex is in column 1. 
-5. GPU workloads need a compact dataset format. GraphBIG provides a tool (csr\_bench/tool\_genCSR) that can generator the required data from standard CSV format. 
+5. GPU workloads need a compact dataset format. GraphBIG provides a tool (csr\_bench/tool\_genCSR) that can generator the required data from standard CSV format (previously mentioned edge.csv and/or vertex.csv). 
 
 
 
