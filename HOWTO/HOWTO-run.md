@@ -62,6 +62,7 @@ Some GPU benchmarks (such as BFS) have multiple variations:
 - topo_warp_centric (twc): topological-driven & warp-centric
 - data_thread_centric (dtc): data-driven & thread-centric
 - data_warp_centric (dwc): data-driven & warp-centric
+- topo_atomic (ta): topological-driven & atomic-inst
 
 (For detailed explanation about topological-/data-driven and thread-/warp-centric, please refer to _Nagesh B. Lakshminarayana, "Efficient graph algorithm execution on data-parallel architectures", dissertation, Georgia Tech_)
 
