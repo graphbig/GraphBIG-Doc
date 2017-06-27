@@ -56,6 +56,14 @@ The benchmarks with their corresponding directory names are listed below.
 |Degree Centrality|bench_degreeCentr|gpu_DegreeCentr|csr_DC|
 |Betweenness Centrality|bench_betweennessCentr|gpu_BetweennessCentr||
 
+Some GPU benchmarks (such as BFS) have multiple variations:
+
+- topo_thread_centric (ttc): topological-driven & thread-centric
+- topo_warp_centric (twc): topological-driven & warp-centric
+- data_thread_centric (dtc): data-driven & thread-centric
+- data_warp_centric (dwc): data-driven & warp-centric
+
+(For detailed explanation about topological-/data-driven and thread-/warp-centric, please refer to _Nagesh B. Lakshminarayana, "Efficient graph algorithm execution on data-parallel architectures", dissertation, Georgia Tech_)
 
 ## Arguments
 
